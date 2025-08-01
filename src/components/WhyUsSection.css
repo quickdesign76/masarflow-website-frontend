@@ -1,0 +1,244 @@
+/* تحديث متوازن للعناوين - أولوية عالية */
+.why-us-section .section-title {
+  font-size: 1.3rem !important; /* حجم موحد مع باقي العناوين */
+  font-weight: 600 !important; /* سماكة موحدة */
+  color: #1a1a1a !important; /* لون غامق وواضح */
+}
+
+.why-us-section .section-description {
+  font-size: 1.25rem !important; /* حجم مناسب للوصف */
+  font-weight: 500 !important; /* سماكة متوسطة */
+  color: #333333 !important; /* لون متوازن */
+}
+
+/* Why Us Section Container - تصميم حديث وبسيط */
+.why-us-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+  position: relative;
+  width: 100%;
+}
+
+/* Container - محدث للتصميم الجديد */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section Header - محدث */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.3rem !important; /* حجم موحد مع باقي العناوين */
+  font-weight: 600 !important; /* سماكة موحدة */
+  color: #1a1a1a !important; /* لون غامق وواضح */
+  margin-bottom: 20px !important;
+  display: inline-block;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important; /* ظل خفيف */
+  letter-spacing: -0.3px !important; /* مسافات محسنة */
+}
+
+/* Section Description */
+.section-description {
+  font-size: 1.25rem !important; /* حجم مناسب */
+  font-weight: 500 !important; /* سماكة متوسطة */
+  color: #333333 !important; /* لون متوازن */
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7 !important;
+  text-shadow: none !important; /* إزالة الظل */
+}
+
+/* Features Grid - 4 بطاقات أفقية */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 0;
+}
+
+/* Feature Card - تصميم حديث وبسيط */
+.feature-card {
+  background-color: #ffffff;
+  padding: 32px 24px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  height: auto;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Hover Effects - تأثيرات بسيطة وحديثة */
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-color: #d1d5db;
+}
+
+/* Feature Icon - أيقونات ملونة وحديثة */
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1);
+}
+
+/* Feature Title - عناوين واضحة ومقروءة */
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+/* Feature Description - أوصاف مختصرة وواضحة */
+.feature-description {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #6b7280;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Responsive Design - تصميم متجاوب للشاشات المتوسطة */
+@media (max-width: 1200px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .feature-card {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 992px) {
+  .why-us-section {
+    padding: 60px 0;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  .section-header {
+    margin-bottom: 50px;
+  }
+  
+  .section-title {
+    font-size: 1.2rem !important;
+  }
+  
+  .section-description {
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-us-section {
+    padding: 50px 0;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 1.1rem !important;
+  }
+  
+  .section-description {
+    font-size: 1.1rem !important;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .feature-card {
+    padding: 28px 20px;
+    min-height: 240px;
+  }
+  
+  .feature-icon {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .feature-title {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+  }
+  
+  .feature-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-us-section {
+    padding: 40px 0;
+  }
+  
+  .container {
+    padding: 0 12px;
+  }
+  
+  .section-header {
+    margin-bottom: 32px;
+  }
+  
+  .section-title {
+    font-size: 2rem !important;
+  }
+  
+  .section-description {
+    font-size: 1rem !important;
+  }
+  
+  .features-grid {
+    gap: 12px;
+  }
+  
+  .feature-card {
+    padding: 24px 16px;
+    min-height: 220px;
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  
+  .feature-title {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  
+  .feature-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+}

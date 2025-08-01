@@ -1,0 +1,38 @@
+/* Basic Reset and Global Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff; /* خلفية بيضاء */
+  color: #1a1a1a; /* نص أسود */
+  line-height: 1.6;
+  direction: rtl; /* **مهم:** لضبط الاتجاه العام للصفحة من اليمين إلى اليسار */
+  text-align: right; /* لتوسيط النص لليمين افتراضيا */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* App Container Styling */
+.App {
+  min-height: 100vh; /* اجعل التطبيق يغطي كامل ارتفاع الشاشة */
+  display: flex;
+  flex-direction: column; /* يجعل العناصر (الرأس والمحتوى) تظهر فوق بعضها */
+  align-items: center; /* توسيط المحتوى أفقيا في المنتصف */
+  justify-content: flex-start; /* ابدأ المحتوى من الأعلى */
+}
+
+/* Basic Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #1a1a1a; /* لون أسود للعناوين */
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,232 @@
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #ffffff;
+  padding: 20px 20px 80px 20px;
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+  clear: both;
+  overflow: hidden;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.testimonials-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(90deg, #0714ea, #7289da);
+  border-radius: 2px;
+}
+
+.testimonials-description {
+  font-size: 1.2rem;
+  color: #666666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Grid Layout - Fixed */
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 50px;
+  justify-items: center;
+  width: 100%;
+}
+
+.testimonial-card {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 450px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0714ea, #7289da);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.quote-icon {
+  font-size: 4rem;
+  color: #0714ea;
+  line-height: 1;
+  margin-bottom: 20px;
+  font-family: Georgia, serif;
+  opacity: 0.2;
+  text-align: right;
+}
+
+.testimonial-quote {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555555;
+  margin-bottom: 30px;
+  flex-grow: 1;
+  font-style: italic;
+  text-align: right;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 20px;
+  border-top: 1px solid #eeeeee;
+  margin-top: auto;
+}
+
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #0714ea, #7289da);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.author-info {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.author-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333333;
+  margin: 0 0 5px 0;
+}
+
+.author-position {
+  font-size: 1rem;
+  color: #777777;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Tablet Layout */
+@media screen and (min-width: 768px) {
+  .testimonials-section {
+    padding: 30px 40px 100px 40px;
+  }
+
+  .testimonials-title {
+    font-size: 3rem;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    max-width: 1000px;
+    margin: 60px auto 0;
+  }
+
+  .testimonial-card {
+    max-width: none;
+    min-height: 380px;
+  }
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 1200px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+  }
+
+  .testimonial-card {
+    min-height: 400px;
+  }
+}
+
+/* Mobile Adjustments */
+@media screen and (max-width: 767px) {
+  .testimonials-section {
+    padding: 15px 15px 60px 15px;
+  }
+
+  .testimonials-title {
+    font-size: 2rem;
+  }
+
+  .testimonials-description {
+    font-size: 1rem;
+  }
+
+  .testimonial-card {
+    padding: 30px 20px;
+    min-height: 300px;
+    max-width: 100%;
+  }
+
+  .quote-icon {
+    font-size: 3rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+  }
+
+  .author-avatar {
+    width: 45px;
+    height: 45px;
+    font-size: 1.6rem;
+  }
+
+  .author-name {
+    font-size: 1.1rem;
+  }
+
+  .author-position {
+    font-size: 0.9rem;
+  }
+}

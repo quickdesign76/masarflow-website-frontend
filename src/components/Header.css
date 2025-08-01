@@ -1,0 +1,197 @@
+/* Header Container */
+.header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  direction: ltr; /* ترتيب العناصر الرئيسية من اليسار لليمين */
+  font-family: 'Tajawal', sans-serif; /* تطبيق خط Tajawal */
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Styling */
+.logo-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* Navigation Bar */
+.navbar {
+  margin-right: 50px; /* إزاحة الروابط من اليمين نحو المنتصف */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  direction: rtl; /* اتجاه النص العربي من اليمين لليسار */
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #1a1a1a; /* لون أغمق وأكثر وضوحاً */
+  font-size: 16px;
+  font-weight: 600; /* زيادة سماكة الخط */
+  font-family: 'Tajawal', sans-serif;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  letter-spacing: 0.5px; /* مسافة خفيفة بين الأحرف */
+}
+
+/* Link States */
+.nav-links a:visited {
+  color: #1a1a1a; /* نفس اللون الأساسي الغامق */
+}
+
+.nav-links a:active {
+  color: #000000; /* أسود كامل عند النقر */
+}
+
+.nav-links a:hover {
+  color: #0714ea; /* لون أزرق أكثر حيوية */
+  font-weight: 700; /* زيادة سماكة الخط عند التحويم */
+}
+
+/* Navigation Buttons */
+.nav-button {
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Tajawal', sans-serif;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  color: #0714ea;
+  font-weight: 700;
+}
+
+.nav-button.active {
+  color: #0714ea;
+  font-weight: 700;
+  position: relative;
+}
+
+.nav-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: #0714ea;
+  border-radius: 1px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .menu-toggle {
+      display: block;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .navbar.active {
+      display: block;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-links li {
+      width: 100%;
+      text-align: center;
+  }
+  
+  .nav-links a {
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600; /* سماكة أكبر للموبايل */
+    color: #1a1a1a; /* نفس اللون الغامق */
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo {
+    height: 35px;
+  }
+}

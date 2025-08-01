@@ -1,0 +1,627 @@
+/* تحديث قوي لعناوين الفوتر - عناوين بيضاء بدون خطوط تحتية */
+.professional-footer .section-title {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  margin-bottom: 16px !important;
+}
+
+.professional-footer .footer-links a {
+  font-size: 13px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 400 !important;
+}
+
+/* تحسين تناسق قسم الاتصال */
+.professional-footer .contact-label {
+  font-size: 11px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 400 !important;
+}
+
+.professional-footer .contact-value {
+  font-size: 13px !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 500 !important;
+}
+
+.professional-footer .contact-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  padding: 8px 0 !important;
+}
+
+.professional-footer .contact-item:last-child {
+  border-bottom: none !important;
+}
+
+.professional-footer .contact-icon {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.professional-footer .contact-info {
+  padding-right: 12px !important;
+}
+
+.professional-footer .social-title {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+}
+
+/* Professional Footer Styles */
+.professional-footer {
+  background: #0f0f0f;
+  color: #ffffff;
+  font-family: 'Tajawal', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  direction: rtl;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Main Footer Content */
+.footer-main {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr 1fr 1.5fr;
+  gap: 32px;
+  padding: 64px 48px 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  width: 100%;
+  box-sizing: border-box;
+  align-items: start;
+}
+
+/* Brand Section */
+.footer-brand {
+  width: 100%;
+  min-width: 0;
+}
+
+.brand-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.brand-logo {
+  height: 48px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  margin-bottom: 8px;
+}
+
+.brand-tagline {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c49c5;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.brand-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Footer Sections */
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 0;
+}
+
+.section-title {
+  font-size: 14px !important; /* حجم أصغر مع !important */
+  font-weight: 500 !important; /* سماكة أخف مع !important */
+  color: #ffffff !important;
+  margin: 0 0 16px 0 !important; /* مسافة أقل */
+  letter-spacing: 0.1px !important;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* تقليل المسافة من 12px إلى 10px */
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.9) !important; /* لون أوضح مع !important */
+  text-decoration: none;
+  font-size: 13px !important; /* حجم أصغر مع !important */
+  font-weight: 400 !important;
+  transition: all 0.3s ease;
+  display: inline-block;
+  padding: 2px 0 !important; /* مسافة أقل */
+  position: relative;
+}
+
+.footer-links a:hover {
+  color: #2c49c5 !important;
+  transform: translateX(-4px);
+  text-shadow: 0 0 8px rgba(44, 73, 197, 0.3);
+}
+
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2c49c5;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* Contact Details - تحسين التنسيق العمودي */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px !important;
+  margin-bottom: 20px !important;
+  width: 100%;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; /* محاذاة وسطية للعناصر */
+  gap: 10px;
+  padding: 8px 0; /* مسافة عمودية للعناصر */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* خط فاصل خفيف */
+}
+
+.contact-item:last-child {
+  border-bottom: none; /* إزالة الخط من العنصر الأخير */
+}
+
+.contact-icon {
+  width: 18px !important;
+  height: 18px !important;
+  color: #2c49c5 !important;
+  flex-shrink: 0 !important;
+  margin-left: 0 !important; /* محاذاة تامة مع النصوص */
+  margin-right: 0 !important; /* إزالة أي مسافة من اليمين */
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 6px rgba(44, 73, 197, 0.4));
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1; /* يأخذ المساحة المتبقية */
+  text-align: right; /* محاذاة النص لليمين */
+  padding-right: 12px; /* إزاحة أقل - إرجاع إلى اليمين قليلاً */
+}
+
+.contact-label {
+  font-size: 11px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 2px !important;
+  display: block;
+}
+
+.contact-value {
+  font-size: 13px !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-decoration: none;
+  font-weight: 500 !important; /* سماكة أكبر قليلاً للوضوح */
+  transition: all 0.3s ease;
+  display: block;
+  direction: ltr; /* للأرقام والإيميل */
+  text-align: right; /* محاذاة لليمين */
+  position: relative;
+}
+
+.contact-value:hover {
+  color: #2c49c5 !important;
+  transform: translateX(-3px);
+  text-shadow: 0 0 8px rgba(44, 73, 197, 0.3);
+}
+
+.contact-value::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: #2c49c5;
+  transition: width 0.3s ease;
+}
+
+.contact-value:hover::after {
+  width: 100%;
+}
+
+/* Social Media */
+.social-media {
+  margin-top: 8px;
+}
+
+.social-title {
+  font-size: 14px !important; /* نفس حجم عناوين الأقسام */
+  font-weight: 500 !important; /* نفس سماكة عناوين الأقسام */
+  color: #ffffff !important;
+  margin: 0 0 16px 0 !important;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.social-link:hover {
+  background: #2c49c5;
+  border-color: #2c49c5;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.social-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  padding: 24px 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  padding: 0 48px;
+  box-sizing: border-box;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.copyright p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  font-weight: 400;
+}
+
+.legal-links {
+  display: flex;
+  gap: 24px;
+}
+
+.legal-links a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: 400;
+}
+
+.legal-links a:hover {
+  color: #2c49c5;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .footer-main {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .footer-section:last-child {
+    grid-column: 1 / -1;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    padding: 0;
+  }
+  
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 48px 32px 32px;
+    text-align: center;
+  }
+  
+  .footer-brand {
+    max-width: none;
+  }
+  
+  .brand-content {
+    align-items: center;
+  }
+  
+  .brand-description {
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  .footer-links {
+    align-items: center;
+  }
+  
+  .contact-details {
+    align-items: center;
+    max-width: 300px; /* عرض محدود للموبايل */
+    margin: 0 auto; /* توسيط القسم */
+  }
+  
+  .contact-item {
+    justify-content: flex-start; /* محاذاة لليسار في الموبايل */
+    text-align: right;
+    padding: 10px 0; /* مسافة أكبر للموبايل */
+  }
+  
+  .contact-info {
+    text-align: right; /* محاذاة النص لليمين */
+    padding-right: 10px; /* إزاحة أقل للموبايل */
+  }
+  
+  .contact-icon {
+    margin-left: 0 !important; /* محاذاة تامة في الشاشات المتوسطة */
+    margin-right: 0 !important;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 0 32px;
+  }
+  
+  .legal-links {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer-container {
+    padding: 0;
+  }
+  
+  .footer-main {
+    gap: 32px;
+    padding: 40px 24px 24px;
+  }
+  
+  .brand-logo {
+    height: 40px;
+  }
+  
+  .brand-tagline {
+    font-size: 15px;
+  }
+  
+  .brand-description {
+    font-size: 14px;
+  }
+  
+  .section-title {
+    font-size: 15px; /* تقليل من 16px إلى 15px للموبايل */
+    margin-bottom: 18px; /* تقليل المسافة */
+  }
+  
+  .footer-links a {
+    font-size: 13px; /* تقليل من 14px إلى 13px للموبايل */
+  }
+  
+  .contact-details {
+    gap: 12px !important; /* مسافة أقل للموبايل */
+  }
+  
+  .contact-item {
+    padding: 8px 0 !important; /* مسافة أقل للموبايل */
+  }
+  
+  .contact-label {
+    font-size: 10px !important; /* حجم أصغر للموبايل */
+  }
+  
+  .contact-value {
+    font-size: 13px !important; /* حجم مناسب للموبايل */
+  }
+  
+  .contact-info {
+    padding-right: 8px !important; /* إزاحة أقل للشاشات الصغيرة جداً */
+  }
+  
+  .contact-icon {
+    margin-left: 0 !important; /* محاذاة تامة في الشاشات الصغيرة */
+    margin-right: 0 !important;
+  }
+  
+  .social-link {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .social-link svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .footer-bottom {
+    padding: 20px 0;
+  }
+
+  .footer-bottom-content {
+    padding: 0 24px;
+  }
+
+  .copyright p {
+    font-size: 13px;
+  }
+
+  .legal-links a {
+    font-size: 13px;
+  }
+  
+  .footer-links a {
+    font-size: 12px !important;
+    padding: 4px 0 !important;
+  }
+  
+  .footer-links a:hover {
+    transform: translateX(-2px);
+  }
+  
+  .contact-value:hover {
+    transform: translateX(-2px);
+  }
+  
+  .contact-item:hover .contact-icon {
+    transform: scale(1.05);
+  }
+  
+  .legal-links {
+    gap: 16px;
+  }
+}
+
+/* Smooth animations */
+@media (prefers-reduced-motion: no-preference) {
+  .footer-section {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .footer-section:nth-child(1) { animation-delay: 0.1s; }
+  .footer-section:nth-child(2) { animation-delay: 0.2s; }
+  .footer-section:nth-child(3) { animation-delay: 0.3s; }
+  .footer-section:nth-child(4) { animation-delay: 0.4s; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* إصلاح عناوين الفوتر - إزالة التأثيرات من AboutUsSection */
+.professional-footer .section-title,
+.professional-footer h3.section-title,
+footer .section-title,
+footer h3.section-title {
+  color: #ffffff !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background-clip: unset !important;
+  text-shadow: none !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  margin-bottom: 16px !important;
+}
+
+/* إزالة الخطوط التحتية من عناوين الفوتر */
+.professional-footer .section-title::after,
+.professional-footer h3.section-title::after,
+footer .section-title::after,
+footer h3.section-title::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* حماية إضافية من تأثيرات CSS الخارجية */
+body .professional-footer .section-title,
+html body .professional-footer .section-title,
+body footer .section-title,
+html body footer .section-title {
+  color: #ffffff !important;
+  background: transparent !important;
+  background-image: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background-clip: unset !important;
+  text-shadow: none !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  margin-bottom: 16px !important;
+  position: relative;
+}
+
+/* إزالة مطلقة للخطوط التحتية */
+body .professional-footer .section-title::after,
+html body .professional-footer .section-title::after,
+body footer .section-title::after,
+html body footer .section-title::after {
+  display: none !important;
+  content: "" !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}

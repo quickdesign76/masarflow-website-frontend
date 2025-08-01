@@ -1,0 +1,505 @@
+/* صفحة الخدمات الرئيسية */
+.services-page {
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Hero Section للخدمات - مع دعم صورة الخلفية */
+.services-hero {
+  padding: 120px 20px 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: 70px;
+  min-height: 500px;
+}
+
+.services-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.services-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.1));
+  z-index: 1;
+}
+
+.services-hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.services-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  margin-bottom: 30px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.services-hero-description {
+  font-size: 1.4rem;
+  color: #ffffff !important;
+  line-height: 1.8;
+  margin-bottom: 0;
+  font-weight: 500;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  opacity: 0.95;
+}
+
+/* قسم الخدمات المفصل */
+.detailed-services {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* تفاصيل كل خدمة */
+.service-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 100px;
+  padding: 60px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.service-detail:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  border-color: #d1d5db;
+}
+
+.service-detail.reverse {
+  direction: ltr;
+}
+
+.service-detail.reverse .service-detail-content {
+  direction: rtl;
+}
+
+/* صورة الخدمة */
+.service-detail-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-detail-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-detail:hover .service-detail-image img {
+  transform: scale(1.03);
+}
+
+/* محتوى الخدمة */
+.service-detail-content {
+  padding: 0;
+}
+
+.service-detail-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  position: relative;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.3px;
+}
+
+.service-detail-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #1800ad, #0714ea);
+  border-radius: 2px;
+}
+
+.service-detail-description {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 35px;
+  font-weight: 500;
+}
+
+/* المميزات والفوائد */
+.service-features,
+.service-benefits {
+  margin-bottom: 35px;
+}
+
+.service-features h3,
+.service-benefits h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.service-features h3::before {
+  content: '⚡';
+  margin-left: 12px;
+  font-size: 1.3rem;
+}
+
+.service-benefits h3::before {
+  content: '🎯';
+  margin-left: 12px;
+  font-size: 1.3rem;
+}
+
+.service-features ul,
+.service-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-features li,
+.service-benefits li {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 12px;
+  padding-right: 28px;
+  position: relative;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.service-features li::before {
+  content: '✓';
+  position: absolute;
+  right: 0;
+  color: #1800ad;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.service-benefits li::before {
+  content: '★';
+  position: absolute;
+  right: 0;
+  color: #0714ea;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* زر الدعوة للعمل للخدمة */
+.service-cta-button {
+  background-color: #1800ad;
+  color: #ffffff;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(24, 0, 173, 0.3);
+  margin-top: 10px;
+}
+
+.service-cta-button:hover {
+  background-color: #0714ea;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(7, 20, 234, 0.4);
+}
+
+/* قسم الدعوة للعمل النهائي */
+.services-cta {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.services-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(24, 0, 173, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.services-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.services-cta h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: -0.3px;
+}
+
+.services-cta p {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+/* أزرار الدعوة للعمل */
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-primary,
+.cta-secondary {
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  min-width: 200px;
+}
+
+.cta-primary {
+  background-color: #1800ad;
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(24, 0, 173, 0.3);
+}
+
+.cta-primary:hover {
+  background-color: #0714ea;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(7, 20, 234, 0.4);
+}
+
+.cta-secondary {
+  background: transparent;
+  color: #1800ad;
+  border: 2px solid #1800ad;
+}
+
+.cta-secondary:hover {
+  background-color: #1800ad;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(24, 0, 173, 0.3);
+}
+
+/* التصميم المتجاوب */
+@media screen and (max-width: 1200px) {
+  .services-container {
+    max-width: 1000px;
+  }
+
+  .service-detail {
+    gap: 60px;
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .service-detail {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+    padding: 40px;
+  }
+
+  .service-detail.reverse {
+    direction: rtl;
+  }
+
+  .services-hero-title {
+    font-size: 2.8rem;
+  }
+
+  .service-detail-title {
+    font-size: 2rem;
+  }
+
+  .service-detail-image img {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services-hero {
+    padding: 80px 20px 60px;
+    margin-top: 60px;
+    min-height: 400px;
+  }
+
+  .services-hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #ffffff !important;
+  }
+
+  .services-hero-description {
+    font-size: 1.2rem;
+    padding: 0 15px;
+    color: #ffffff !important;
+  }
+
+  .detailed-services {
+    padding: 60px 20px;
+  }
+
+  .service-detail {
+    margin-bottom: 60px;
+    padding: 30px;
+  }
+
+  .service-detail-image img {
+    height: 280px;
+  }
+
+  .service-detail-title {
+    font-size: 1.8rem;
+  }
+
+  .service-detail-description {
+    font-size: 1rem;
+  }
+
+  .service-features h3,
+  .service-benefits h3 {
+    font-size: 1.2rem;
+  }
+
+  .services-cta {
+    padding: 60px 20px;
+  }
+
+  .services-cta h2 {
+    font-size: 2.2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .services-hero {
+    padding: 70px 15px 50px;
+    min-height: 350px;
+  }
+
+  .services-hero-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff !important;
+  }
+
+  .services-hero-description {
+    font-size: 1.1rem;
+    padding: 0 10px;
+    color: #ffffff !important;
+  }
+
+  .detailed-services {
+    padding: 50px 15px;
+  }
+
+  .service-detail {
+    margin-bottom: 50px;
+    padding: 25px;
+  }
+
+  .service-detail-image img {
+    height: 220px;
+  }
+
+  .service-detail-title {
+    font-size: 1.5rem;
+  }
+
+  .service-detail-description {
+    font-size: 0.95rem;
+  }
+
+  .service-features h3,
+  .service-benefits h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-features li,
+  .service-benefits li {
+    font-size: 0.9rem;
+  }
+
+  .service-cta-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .services-cta {
+    padding: 50px 15px;
+  }
+
+  .services-cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .services-cta p {
+    font-size: 1rem;
+  }
+}

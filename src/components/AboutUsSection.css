@@ -1,0 +1,862 @@
+/* About Us Section - تصميم احترافي حديث - عناوين بيضاء نقية للخلفيات الملونة - إصلاح قوي */
+.about-us-section {
+  font-family: 'Tajawal', sans-serif;
+  direction: rtl;
+  color: #1f2937;
+  line-height: 1.7;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* إضافة تأثيرات عامة */
+* {
+  box-sizing: border-box;
+}
+
+/* تحسين الانتقالات */
+.about-us-section * {
+  transition: all 0.3s ease;
+}
+
+/* Hero Section - تصميم احترافي بدون فراغات مع دعم صورة الخلفية */
+.about-hero {
+  padding: 80px 0 60px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+  margin-top: 70px; /* للتعويض عن الهيدر الثابت */
+  min-height: 350px; /* تقليل الارتفاع الأدنى */
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1); /* تقليل الشفافية لإظهار الصورة بشكل أفضل */
+  z-index: 1;
+}
+
+.about-hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.1));
+  z-index: 1;
+}
+
+/* الأنماط الجديدة للـ Hero - مطابقة لصفحة الخدمات */
+.about-hero-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.about-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff !important;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.about-hero-description {
+  font-size: 1.4rem;
+  color: #ffffff !important;
+  line-height: 1.8;
+  margin-bottom: 0;
+  font-weight: 500;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  opacity: 0.95;
+}
+
+/* الأنماط القديمة للـ hero-quote - للتوافق مع الإصدارات السابقة */
+.hero-quote {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  line-height: 1.3;
+  padding: 0 20px;
+}
+
+/* Container - بدون فراغات جانبية */
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0 40px;
+  width: 100%;
+}
+
+/* Content Area - تصميم احترافي */
+.about-content {
+  background-color: #ffffff;
+  padding: 100px 0;
+  width: 100%;
+  margin: 0;
+}
+
+/* Content Sections - تصميم احترافي */
+.content-section {
+  margin-bottom: 120px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.content-section:last-child {
+  margin-bottom: 0;
+}
+
+/* Section Titles - تصميم موحد مع باقي العناوين */
+.section-title {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  color: #1a1a1a !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #1a1a1a !important;
+  background-clip: unset !important;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  letter-spacing: -0.5px;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, #1e3a8a, #3730a3, #581c87);
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(30, 58, 138, 0.3);
+}
+
+/* تأكيد تنسيق العناوين العادية - تحديث موحد */
+.about-content .content-section .section-title,
+.about-content .content-section h2.section-title,
+.about-us-section .content-section .section-title {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  color: #1a1a1a !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: #1a1a1a !important;
+  background-clip: unset !important;
+  text-shadow: none !important;
+}
+
+/* إصلاح خاص لعناوين الأقسام الملونة */
+.about-us-section .vision-section .section-title,
+.about-us-section .why-section .section-title {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Content Text - تصميم احترافي */
+.content-text {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-text p {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  color: #1f2937;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.content-text .highlight {
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  border-right: 6px solid #1e3a8a;
+  margin-top: 40px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.content-text .highlight::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(30, 58, 138, 0.05));
+}
+
+.content-text .highlight strong {
+  color: #1e3a8a;
+  font-weight: 800;
+  font-size: 1.1em;
+}
+
+/* Services List - تصميم احترافي */
+.services-list {
+  max-width: 900px;
+  margin: 50px auto 0;
+  display: grid;
+  gap: 20px;
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 25px;
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  border-radius: 15px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.service-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #1e3a8a, #3730a3, #581c87);
+  transform: scaleY(0);
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  transform: translateX(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover::before {
+  transform: scaleY(1);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-left: 20px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.service-text {
+  font-size: 1.3rem;
+  color: #1f2937;
+  line-height: 1.7;
+  font-weight: 600;
+}
+
+/* Vision Section - تصميم احترافي */
+.vision-section {
+  background: linear-gradient(135deg, #1e3a8a, #3730a3);
+  padding: 80px 40px;
+  border-radius: 25px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(30, 58, 138, 0.2);
+}
+
+.vision-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* عنوان قسم الرؤية - أبيض للخلفية الزرقاء - إصلاح فوري */
+.vision-section .section-title,
+.vision-section h2.section-title,
+.about-us-section .vision-section .section-title {
+  color: #ffffff !important;
+  background: none !important;
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+  margin-bottom: 60px !important;
+}
+
+.vision-section .section-title::after,
+.vision-section h2.section-title::after {
+  background: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3) !important;
+}
+
+.vision-content {
+  position: relative;
+  z-index: 1;
+}
+
+.vision-content p {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #ffffff;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Values Grid - تصميم احترافي */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-top: 60px;
+}
+
+.value-card {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  padding: 45px 35px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  border: 1px solid #e2e8f0;
+  position: relative;
+  overflow: hidden;
+}
+
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1e3a8a, #3730a3, #581c87);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+}
+
+.value-card:hover::before {
+  transform: scaleX(1);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  display: block;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+  transform: scale(1.1);
+}
+
+.value-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 18px;
+  letter-spacing: -0.3px;
+}
+
+.value-description {
+  font-size: 1.2rem;
+  color: #374151;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Why Section - تصميم احترافي محسن */
+.why-section {
+  background: linear-gradient(135deg, #1e3a8a, #3730a3, #581c87);
+  padding: 80px 40px;
+  border-radius: 25px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(30, 58, 138, 0.3);
+}
+
+.why-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+}
+
+/* عنوان قسم لماذا MasarFlow - أبيض للخلفية الزرقاء - إصلاح فوري */
+.why-section .section-title,
+.why-section h2.section-title,
+.about-us-section .why-section .section-title {
+  color: #ffffff !important;
+  background: none !important;
+  -webkit-text-fill-color: #ffffff !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+  margin-bottom: 60px !important;
+}
+
+.why-section .section-title::after,
+.why-section h2.section-title::after {
+  background: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3) !important;
+}
+
+.why-content {
+  position: relative;
+  z-index: 1;
+}
+
+.why-content p {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.why-content strong {
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Founder Section - تصميم احترافي */
+.founder-section {
+  text-align: center;
+}
+
+.founder-message {
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  padding: 60px 50px;
+  border-radius: 25px;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.founder-message::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #1e3a8a, #3730a3, #581c87);
+}
+
+.quote-mark {
+  font-size: 5rem;
+  color: #1e3a8a;
+  font-weight: 900;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  opacity: 0.15;
+  font-family: 'Times New Roman', serif;
+}
+
+.founder-quote {
+  font-size: 1.7rem;
+  font-style: italic;
+  color: #1f2937;
+  margin-bottom: 35px;
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.founder-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.founder-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #1e3a8a, #3730a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.founder-title {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Responsive Design - تحسينات للشاشات المختلفة */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+  
+  .content-section {
+    margin-bottom: 100px;
+  }
+  
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 60px 0 50px 0;
+    margin-top: 60px;
+    min-height: 300px;
+  }
+  
+  .hero-quote {
+    font-size: 2.2rem;
+    padding: 0 20px;
+  }
+  
+  .about-hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ffffff !important;
+  }
+
+  .about-hero-description {
+    font-size: 1.2rem;
+    padding: 0 15px;
+    color: #ffffff !important;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  .about-content {
+    padding: 60px 0;
+  }
+  
+  .content-section {
+    margin-bottom: 80px;
+  }
+  
+  .section-title,
+  .content-section .section-title {
+    font-size:1.7rem !important;
+    color: #1a1a1a !important;
+  }
+  
+  .content-text p {
+    font-size: 2.4rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .value-card {
+    padding: 35px 25px;
+  }
+  
+  .vision-section,
+  .why-section {
+    padding: 60px 30px;
+  }
+  
+  .founder-message {
+    padding: 45px 35px;
+  }
+  
+  .vision-content p {
+    font-size: 1.5rem;
+  }
+  
+  .why-content p {
+    font-size: 1.4rem;
+    color: #ffffff !important;
+  }
+  
+  .founder-quote {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 50px 0 40px 0;
+    margin-top: 60px;
+    min-height: 250px;
+  }
+  
+  .hero-quote {
+    font-size: 1.8rem;
+    padding: 0 15px;
+  }
+  
+  .about-hero-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffffff !important;
+  }
+
+  .about-hero-description {
+    font-size: 1.1rem;
+    padding: 0 10px;
+    color: #ffffff !important;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .about-content {
+    padding: 40px 0;
+  }
+  
+  .content-section {
+    margin-bottom: 60px;
+  }
+  
+  .section-title,
+  .content-section .section-title {
+    font-size: 1.1rem !important;
+    color: #1a1a1a !important;
+  }
+  
+  /* عناوين الأقسام الملونة للشاشات الصغيرة */
+  .vision-section .section-title,
+  .why-section .section-title {
+    color: #ffffff !important;
+  }
+  
+  .content-text p {
+    font-size: 1.3rem;
+  }
+  
+  .content-text .highlight {
+    padding: 20px;
+  }
+  
+  .service-item {
+    padding: 20px;
+  }
+  
+  .service-icon {
+    font-size: 1.5rem;
+    margin-left: 15px;
+  }
+  
+  .service-text {
+    font-size: 1.2rem;
+  }
+  
+  .value-card {
+    padding: 30px 20px;
+  }
+  
+  .value-icon {
+    font-size: 2.5rem;
+  }
+  
+  .value-title {
+    font-size: 1.2rem;
+  }
+  
+  .value-description {
+    font-size: 1.1rem;
+  }
+  
+  .vision-section,
+  .why-section {
+    padding: 40px 20px;
+    border-radius: 20px;
+  }
+  
+  .vision-content p {
+    font-size: 1.1rem;
+  }
+  
+  .why-content p {
+    font-size: 1.1rem;
+    color: #ffffff !important;
+  }
+  
+  .founder-message {
+    padding: 35px 25px;
+    border-radius: 20px;
+  }
+  
+  .founder-quote {
+    font-size: 1.1rem;
+  }
+  
+  .quote-mark {
+    font-size: 3.5rem;
+    top: 10px;
+    right: 25px;
+  }
+  
+  .founder-name {
+    font-size: 1.1rem;
+  }
+  
+  .founder-title {
+    font-size: 0.9rem;
+  }
+}
+
+/* إصلاح نهائي لعناوين الأقسام الملونة - أولوية قصوى */
+.vision-section .section-title,
+.why-section .section-title,
+.vision-section h2.section-title,
+.why-section h2.section-title,
+.about-us-section .vision-section .section-title,
+.about-us-section .why-section .section-title {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: transparent !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  margin-bottom: 60px !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* إصلاح خاص للخطوط التحتية البيضاء */
+.vision-section .section-title::after,
+.why-section .section-title::after,
+.vision-section h2.section-title::after,
+.why-section h2.section-title::after {
+  background: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.4) !important;
+}
+
+/* إصلاح نهائي مطلق - لا يمكن تجاوزه */
+div.vision-section h2.section-title,
+div.why-section h2.section-title,
+.content-section.vision-section .section-title,
+.content-section.why-section .section-title,
+.content-section.vision-section h2.section-title,
+.content-section.why-section h2.section-title {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+}
+
+/* الحل الأقوى - استهداف مباشر */
+.about-us-section .content-section.vision-section h2,
+.about-us-section .content-section.why-section h2 {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: transparent !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* الحل الأخير - قوة مطلقة */
+h2[class*="section-title"] {
+  color: inherit;
+}
+
+.vision-section h2[class*="section-title"],
+.why-section h2[class*="section-title"] {
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+}
+
+/* إجبار اللون الأبيض بأي طريقة */
+.vision-section * {
+  --title-color: white;
+}
+
+.why-section * {
+  --title-color: white;
+}
+
+.vision-section .section-title,
+.why-section .section-title {
+  color: var(--title-color, white) !important;
+  -webkit-text-fill-color: var(--title-color, white) !important;
+}
+
+/* الحل النهائي المطلق - أقوى من أي شيء آخر */
+body .about-us-section .content-section.vision-section .section-title,
+body .about-us-section .content-section.why-section .section-title,
+html body .about-us-section .content-section.vision-section h2.section-title,
+html body .about-us-section .content-section.why-section h2.section-title {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: none !important;
+  background-image: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7) !important;
+}

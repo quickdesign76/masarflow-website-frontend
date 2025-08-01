@@ -1,0 +1,137 @@
+/* Hero Section Container */
+.hero-section {
+  width: 100%;
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px; /* لتعويض ارتفاع Header الثابت */
+}
+
+/* Dark Overlay - تقليل الشفافية لإظهار التدرج والصورة */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* تقليل الشفافية من 70% إلى 30% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Content Container */
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+  direction: rtl;
+}
+
+/* Hero Title */
+.hero-title {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 25px;
+  line-height: 1.3;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* تحسين ظل النص */
+}
+
+/* Hero Description - First Paragraph */
+.hero-description {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 23px;
+  line-height: 1.7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Sub-description - Second Paragraph - تم تكبير حجم الخط */
+.hero-subdescription {
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1.4rem; /* تم زيادته من 1.2rem إلى 1.4rem */
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 35px;
+  line-height: 1.8;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); /* تحسين ظل النص */
+  opacity: 0.95;
+}
+
+/* Call to Action Button */
+.hero-button {
+  display: inline-block;
+  font-family: 'Tajawal', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #1800ad; /* لون الشعار */
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(7, 20, 234, 0.3);
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.hero-button:hover {
+  background-color: #050fbd; /* لون أزرق أغمق */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(7, 20, 234, 0.4);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    min-height: 70vh;
+    margin-top: 60px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+  
+  .hero-subdescription {
+    font-size: 1.1rem; /* حجم أصغر قليلاً للموبايل */
+    padding: 0 15px;
+    margin-bottom: 25px;
+  }
+  
+  .hero-button {
+    font-size: 1rem;
+    padding: 12px 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .hero-subdescription {
+    font-size: 1rem; /* حجم مناسب للشاشات الصغيرة جداً */
+  }
+}
