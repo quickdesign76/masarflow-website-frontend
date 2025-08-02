@@ -14,6 +14,7 @@ import PortfolioPage from './pages/PortfolioPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
 import NotFoundPage from './pages/NotFoundPage';
+
 import ScrollToTop from './components/ScrollToTop';
 import Footer from './components/Footer'; 
 
@@ -64,6 +65,8 @@ function App() {
       <Footer />
     </div>
   );
+
+
 
   // صفحة الأعمال
   const PortfolioPageWrapper = () => (

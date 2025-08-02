@@ -28,18 +28,59 @@ const ContactPage = () => {
     setSubmitStatus('');
 
     try {
-      // محاكاة إرسال النموذج
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        service: '',
-        message: ''
+      // التحقق من البيانات قبل الإرسال
+      if (!formData.name || !formData.email || !formData.message) {
+        throw new Error('يرجى ملء جميع الحقول المطلوبة');
+      }
+
+      // إنشاء FormData للإرسال إلى Web3Forms (نفس طريقة نموذج الاختبار الناجح)
+      const formDataToSend = new FormData();
+      formDataToSend.append('access_key', '965d2fcc-b2aa-4cd1-8dad-2eece4d70f77');
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('phone', formData.phone || '');
+      formDataToSend.append('company', formData.company || '');
+      formDataToSend.append('service', formData.service || '');
+      formDataToSend.append('message', formData.message);
+      formDataToSend.append('subject', `رسالة جديدة من ${formData.name} - ${formData.service || 'استفسار عام'}`);
+
+      console.log('إرسال البيانات إلى Web3Forms...');
+      console.log('Form data being sent:', {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        company: formData.company,
+        service: formData.service,
+        message: formData.message
       });
+      
+      // إرسال البيانات إلى Web3Forms (نفس طريقة نموذج الاختبار)
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formDataToSend
+      });
+
+      const result = await response.json();
+      console.log('Response status:', response.status);
+      console.log('Response result:', result);
+
+      if (result.success) {
+        setSubmitStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          service: '',
+          message: ''
+        });
+        console.log('✅ تم إرسال الرسالة بنجاح!');
+      } else {
+        console.error('❌ خطأ من Web3Forms:', result);
+        throw new Error(result.message || 'فشل في إرسال النموذج');
+      }
     } catch (error) {
+      console.error('❌ خطأ في إرسال النموذج:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -79,7 +120,14 @@ const ContactPage = () => {
               <form 
                 className="contact-form"
                 onSubmit={handleSubmit}
+                action="https://api.web3forms.com/submit"
+                method="POST"
               >
+                {/* حقول مخفية لـ Web3Forms */}
+                <input type="hidden" name="access_key" value="965d2fcc-b2aa-4cd1-8dad-2eece4d70f77" />
+                <input type="hidden" name="subject" value="رسالة جديدة من موقع مسار فلو" />
+                <input type="hidden" name="from_name" value="موقع مسار فلو" />
+                <input type="hidden" name="_captcha" value="false" />
                 <div className="form-row">
                   <div className="form-group">
                     <label htmlFor="name">الاسم الكامل *</label>
@@ -181,7 +229,7 @@ const ContactPage = () => {
 
                 {submitStatus === 'error' && (
                   <div className="submit-message error">
-                    ❌ حدث خطأ في الإرسال. يرجى المحاولة مرة أخرى.
+                    ❌ حدث خطأ في الإرسال. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة.
                   </div>
                 )}
               </form>
