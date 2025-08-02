@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutUsSection.css';
-import aboutHeroImage from '../assets/about_hero.png';
+import aboutHeroImage from '../assets/about_hero.jpg';
 
 const AboutUsSection = () => {
   const services = [
