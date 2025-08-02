@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ContactPage.css';
 import contactHeroImage from '../assets/contact_hero.jpg';
+import SEOHead from './SEOHead';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -89,6 +90,12 @@ const ContactPage = () => {
 
   return (
     <div className="contact-page">
+      <SEOHead 
+        title="اتصل بنا - مسار فلو | استشارة مجانية للحلول التقنية الذكية"
+        description="تواصل مع فريق مسار فلو للحصول على استشارة مجانية حول الحلول التقنية الذكية والمؤتمتة. نحن هنا لمساعدتك في تحسين كفاءة أعمالك وتقليل التكاليف."
+        keywords="اتصل بنا, مسار فلو, استشارة مجانية, حلول تقنية ذكية, أتمتة الأعمال, بوتات محادثة, تحسين الكفاءة"
+        url="https://masarflow.com/contact"
+      />
       {/* Hero Section */}
       <div className="contact-hero dark-section blue-bg" style={{
         backgroundImage: `linear-gradient(135deg, rgba(30, 58, 138, 0.8) 0%, rgba(55, 48, 163, 0.8) 50%, rgba(88, 28, 135, 0.8) 100%), url(${contactHeroImage})`,

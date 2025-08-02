@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "مسار فلو",
+  "name": "مسار فلو - MasarFlow | حلول تقنية متكاملة مدعومة بالذكاء الاصطناعي",
+  "description": "نُبسط لك التقنية. مسار فلو تقدم حلولًا ذكية ومؤتمتة تساعدك على العمل بكفاءة أكبر، عبر دمج الأتمتة والذكاء الاصطناعي في أعمالك اليومية.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +9,22 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192jpg",
-      "type": "image/jpg",
+      "src": "logo192.jpg",
+      "type": "image/jpeg",
       "sizes": "192x192"
     },
     {
       "src": "logo512.jpg",
-      "type": "image/jpg",
+      "type": "image/jpeg",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#1e3a8a",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity", "technology"],
+  "lang": "ar",
+  "dir": "rtl"
 }

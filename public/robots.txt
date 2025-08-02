@@ -1,3 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://masarflow.com/sitemap.xml
+
+# MasarFlow - حلول الأتمتة والذكاء الاصطناعي
+# تطوير المواقع والتطبيقات والحلول التقنية المتكاملة
