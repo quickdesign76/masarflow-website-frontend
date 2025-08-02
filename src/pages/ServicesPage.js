@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import './ServicesPage.css';
 // استيراد الصور
-import chatbotImage from '../assets/chatbot_service.png';
-import marketingImage from '../assets/marketing_automation.png';
-import socialMediaImage from '../assets/social_media_automation.png';
-import aiContentImage from '../assets/ai_content_creation.png';
+import chatbotImage from '../assets/chatbot_service.jpg';
+import marketingImage from '../assets/marketing_automation.jpg';
+import socialMediaImage from '../assets/social_media_automation.jpg';
+import aiContentImage from '../assets/ai_content_creation.jpg';
 import servicesHeroImage from '../assets/services_hero.png';
 
 const ServicesPage = () => {
