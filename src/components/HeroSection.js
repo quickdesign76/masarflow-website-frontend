@@ -1,6 +1,6 @@
 import React from 'react';
 import './HeroSection.css';
-import heroBg from '../assets/hero_bg.png';
+import heroBg from '../assets/hero_bg.jpg';
 import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
