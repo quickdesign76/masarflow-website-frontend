@@ -1,0 +1,21 @@
+طرق مسح كاش المتصفح لإظهار الأيقونة الجديدة:
+
+=== Chrome/Edge ===
+1. اضغط Ctrl+Shift+Delete
+2. اختر "All time" أو "كل الوقت"
+3. تأكد من تحديد "Cached images and files"
+4. اضغط "Clear data"
+
+=== Firefox ===
+1. اضغط Ctrl+Shift+Delete
+2. اختر "Everything" أو "كل شيء"
+3. تأكد من تحديد "Cache"
+4. اضغط "Clear Now"
+
+=== طريقة سريعة ===
+1. اضغط Ctrl+F5 عدة مرات
+2. أو اضغط F12 → Network → Disable cache → أعد تحميل الصفحة
+
+=== إعادة تشغيل الخادم ===
+1. في Terminal اضغط Ctrl+C
+2. ثم اكتب: npm start

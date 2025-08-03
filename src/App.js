@@ -16,7 +16,10 @@ import TermsOfServicePage from './pages/TermsOfServicePage';
 import NotFoundPage from './pages/NotFoundPage';
 
 import ScrollToTop from './components/ScrollToTop';
-import Footer from './components/Footer'; 
+import Footer from './components/Footer';
+import SEOHead from './components/SEOHead';
+import StructuredData from './components/StructuredData';
+import siteConfig from './config/seoConfig'; 
 
 function App() { 
   const location = useLocation();
@@ -29,6 +32,13 @@ function App() {
   // الصفحة الرئيسية
   const HomePage = () => (
     <div className="App">
+      <SEOHead 
+        title={siteConfig.pages.home.title}
+        description={siteConfig.pages.home.description}
+        keywords={siteConfig.pages.home.keywords}
+        url={siteConfig.siteUrl + siteConfig.pages.home.url}
+      />
+      <StructuredData type="website" />
       <Header />
       <HeroSection />
       <WhyUsSection />
@@ -42,6 +52,12 @@ function App() {
   // صفحة من نحن
   const AboutPage = () => (
     <div className="App">
+      <SEOHead 
+        title={siteConfig.pages.about.title}
+        description={siteConfig.pages.about.description}
+        keywords={siteConfig.pages.about.keywords}
+        url={siteConfig.siteUrl + siteConfig.pages.about.url}
+      />
       <Header />
       <AboutUsSection />
       <Footer />
@@ -51,6 +67,13 @@ function App() {
   // صفحة الخدمات
   const ServicesPageWrapper = () => (
     <div className="App">
+      <SEOHead 
+        title={siteConfig.pages.services.title}
+        description={siteConfig.pages.services.description}
+        keywords={siteConfig.pages.services.keywords}
+        url={siteConfig.siteUrl + siteConfig.pages.services.url}
+      />
+      <StructuredData type="services" />
       <Header />
       <ServicesPage />
       <Footer />
@@ -60,6 +83,13 @@ function App() {
   // صفحة التواصل
   const ContactPageWrapper = () => (
     <div className="App">
+      <SEOHead 
+        title={siteConfig.pages.contact.title}
+        description={siteConfig.pages.contact.description}
+        keywords={siteConfig.pages.contact.keywords}
+        url={siteConfig.siteUrl + siteConfig.pages.contact.url}
+      />
+      <StructuredData type="contact" />
       <Header />
       <ContactPage />
       <Footer />
@@ -71,6 +101,12 @@ function App() {
   // صفحة الأعمال
   const PortfolioPageWrapper = () => (
     <div className="App">
+      <SEOHead 
+        title={siteConfig.pages.portfolio.title}
+        description={siteConfig.pages.portfolio.description}
+        keywords={siteConfig.pages.portfolio.keywords}
+        url={siteConfig.siteUrl + siteConfig.pages.portfolio.url}
+      />
       <Header />
       <PortfolioPage />
       <Footer />
@@ -80,6 +116,12 @@ function App() {
   // صفحة سياسة الخصوصية
   const PrivacyPolicyPageWrapper = () => (
     <div className="App">
+      <SEOHead 
+        title={siteConfig.pages.privacy.title}
+        description={siteConfig.pages.privacy.description}
+        keywords={siteConfig.pages.privacy.keywords}
+        url={siteConfig.siteUrl + siteConfig.pages.privacy.url}
+      />
       <Header />
       <PrivacyPolicyPage />
       <Footer />
@@ -89,6 +131,12 @@ function App() {
   // صفحة شروط الاستخدام
   const TermsOfServicePageWrapper = () => (
     <div className="App">
+      <SEOHead 
+        title={siteConfig.pages.terms.title}
+        description={siteConfig.pages.terms.description}
+        keywords={siteConfig.pages.terms.keywords}
+        url={siteConfig.siteUrl + siteConfig.pages.terms.url}
+      />
       <Header />
       <TermsOfServicePage />
       <Footer />
@@ -98,6 +146,12 @@ function App() {
   // صفحة 404
   const NotFoundPageWrapper = () => (
     <div className="App">
+      <SEOHead 
+        title="الصفحة غير موجودة - مسار فلو | 404"
+        description="عذراً، الصفحة التي تبحث عنها غير موجودة. تصفح موقع مسار فلو للعثور على الحلول التقنية والخدمات التي تحتاجها."
+        keywords="صفحة غير موجودة, 404, مسار فلو, خطأ"
+        url={siteConfig.siteUrl + location.pathname}
+      />
       <Header />
       <NotFoundPage />
       <Footer />

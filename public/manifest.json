@@ -4,19 +4,22 @@
   "description": "نُبسط لك التقنية. مسار فلو تقدم حلولًا ذكية ومؤتمتة تساعدك على العمل بكفاءة أكبر، عبر دمج الأتمتة والذكاء الاصطناعي في أعمالك اليومية.",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
       "src": "logo192.jpg",
       "type": "image/jpeg",
-      "sizes": "192x192"
+      "sizes": "192x192",
+      "purpose": "any maskable"
     },
     {
       "src": "logo512.jpg",
       "type": "image/jpeg",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo192.jpg",
+      "type": "image/jpeg",
+      "sizes": "32x32 16x16",
+      "purpose": "favicon"
     }
   ],
   "start_url": ".",
