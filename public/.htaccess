@@ -1,5 +1,11 @@
 # MasarFlow Website - SEO and Performance Optimizations
 
+# Set correct MIME types for SEO files
+<IfModule mod_mime.c>
+    AddType application/xml .xml
+    AddType text/xml .xml
+</IfModule>
+
 # Enable compression
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/plain
@@ -38,8 +44,14 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Handle React Router
+# Handle React Router - but allow access to sitemap.xml and robots.txt
 RewriteEngine On
+
+# Allow direct access to sitemap.xml and robots.txt
+RewriteCond %{REQUEST_URI} ^/(sitemap\.xml|robots\.txt|BingSiteAuth\.xml|google-site-verification\.html)$ [NC]
+RewriteRule ^ - [L]
+
+# Handle React Router for other requests
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
